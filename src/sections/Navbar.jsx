@@ -1,5 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
-import { socials } from "../constants";
+// import { socials } from "../constants";
+
+const socials = [
+  { name: "MEETING", href: "https://cal.com/elijahfarrell" },
+  { name: "Youtube", href: "https://elijahfarrell.com" },
+  { name: "LinkedIn", href: "https://www.linkedin.com/in/elijah-farrell-915047349/" },
+  { name: "GitHub", href: "https://github.com/elijah-farrell" },
+];
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { Link } from "react-scroll";
@@ -14,6 +21,8 @@ const Navbar = () => {
   const iconTl = useRef(null);
   const [isOpen, setIsOpen] = useState(false);
   const [showBurger, setShowBurger] = useState(true);
+  
+  console.log("Socials array:", socials);
   useGSAP(() => {
     gsap.set(navRef.current, { xPercent: 100 });
     gsap.set([linksRef.current, contactRef.current], {
@@ -75,7 +84,8 @@ const Navbar = () => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
 
-      setShowBurger(currentScrollY <= lastScrollY || currentScrollY < 10);
+      // Keep burger visible when navbar is open, otherwise hide/show based on scroll direction
+      setShowBurger(isOpen || currentScrollY <= lastScrollY || currentScrollY < 10);
 
       lastScrollY = currentScrollY;
     };
@@ -83,7 +93,7 @@ const Navbar = () => {
       passive: true,
     });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [isOpen]);
 
   const toggleMenu = () => {
     if (isOpen) {
@@ -120,28 +130,30 @@ const Navbar = () => {
         </div>
         <div
           ref={contactRef}
-          className="flex flex-col flex-wrap justify-between gap-8 md:flex-row"
+          className="flex flex-col flex-wrap justify-between gap-8 md:flex-row md:items-end"
         >
           <div className="font-light">
             <p className="tracking-wider text-white/50">E-mail</p>
-            <p className="text-xl tracking-widest lowercase text-pretty">
-              JohnDoe@gmail.com
+            <p className="text-sm tracking-widest lowercase text-pretty">
+              farrellelijah@outlook.com
             </p>
           </div>
           <div className="font-light">
             <p className="tracking-wider text-white/50">Social Media</p>
-            <div className="flex flex-col flex-wrap md:flex-row gap-x-2">
-              {socials.map((social, index) => (
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+              {socials && socials.length > 0 ? socials.map((social, index) => (
                 <a
                   key={index}
                   href={social.href}
-                  className="text-sm leading-loose tracking-widest uppercase hover:text-white transition-colors duration-300"
+                  className="text-sm tracking-widest uppercase hover:text-white transition-colors duration-300"
                 >
                   {"{ "}
                   {social.name}
                   {" }"}
                 </a>
-              ))}
+              )) : (
+                <span className="text-sm text-white/50">No social links available</span>
+              )}
             </div>
           </div>
         </div>
