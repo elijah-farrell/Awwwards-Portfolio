@@ -118,7 +118,7 @@ body {
 @media (max-width: 339px) {
   .banner-text-responsive {
     font-size: 28px !important;
-    line-height: 1.2 !important;
+    line-height: 1.3 !important;
   }
   
   .marquee-text-responsive {
@@ -167,7 +167,7 @@ body {
 }
 
 @utility banner-text-responsive {
-  @apply text-[36px] sm:text-[48px] md:text-[68px] lg:text-[118px] xl:text-[126px] 2xl:text-[152px] leading-5 sm:leading-6 md:leading-9 lg:leading-16 xl:leading-20;
+  @apply text-[36px] sm:text-[48px] md:text-[68px] lg:text-[118px] xl:text-[126px] 2xl:text-[152px] leading-6 sm:leading-7 md:leading-10 lg:leading-18 xl:leading-22;
 }
 
 @utility value-text-responsive {

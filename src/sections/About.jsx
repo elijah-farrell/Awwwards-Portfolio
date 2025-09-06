@@ -3,17 +3,14 @@ import AnimatedHeaderSection from "../components/AnimatedHeaderSection";
 import { AnimatedTextLines } from "../components/AnimatedTextLines";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { Icon } from "@iconify/react/dist/iconify.js";
 
 const About = () => {
   const text = `Passionate about clean architecture
     I build scalable, high-performance solutions
     from prototype to production`;
-  const aboutText = `Obsessed with building fast, intuitive apps—from pixel-perfect React UIs to bulletproof serverless backends. Every line of code is a promise: quality that users feel.
-  When I’m not shipping:
-⚡️ Open-sourcing my latest experiment (or hacking on yours)
-🎥 Teaching devs on Twitch/YouTube—because rising tides lift all ships
-🧗 Rock climbing (problem-solving with real stakes)
-🎸 Strumming chords while CI pipelines pass (multitasking at its finest)`;
+  const aboutText = `Committed to continuous growth in tech—from web development to AI research. Every challenge is a chance: expanding skills and contributing to meaningful projects.
+  When I'm not learning:`;
   const imgRef = useRef(null);
   useGSAP(() => {
     gsap.to("#about", {
@@ -41,7 +38,7 @@ const About = () => {
   return (
     <section id="about" className="min-h-screen bg-black rounded-b-4xl">
       <AnimatedHeaderSection
-        subTitle={"Cod with purpose, Built to scale"}
+        subTitle={"Innovating with code, Growing through technology"}
         title={"About"}
         text={text}
         textColor={"text-white"}
@@ -50,11 +47,31 @@ const About = () => {
       <div className="flex flex-col items-center justify-between gap-16 px-0 sm:px-1 md:px-3 lg:px-6 pb-16 text-xl font-light tracking-wide lg:flex-row md:text-2xl lg:text-3xl text-white/60 ultra-small-screen">
         <img
           ref={imgRef}
-          src="images/man.jpg"
-          alt="man"
+          src="images/pfp.png"
+          alt="Elijah Farrell"
           className="w-md rounded-3xl"
         />
-        <AnimatedTextLines text={aboutText} className={"w-full"} />
+        <div className="w-full">
+          <AnimatedTextLines text={aboutText} className={"w-full"} />
+          <div className="mt-4 space-y-2">
+            <div className="flex items-center gap-3">
+              <Icon icon="lucide:code" className="text-white/80" />
+              <span>Open-sourcing my latest experiment—because rising tides lift all ships</span>
+            </div>
+            <div className="flex items-center gap-3">
+              <Icon icon="lucide:search" className="text-white/80" />
+              <span>Exploring new technologies</span>
+            </div>
+            <div className="flex items-center gap-3">
+              <Icon icon="lucide:mountain" className="text-white/80" />
+              <span>Hiking the Adirondacks</span>
+            </div>
+            <div className="flex items-center gap-3">
+              <Icon icon="lucide:gamepad-2" className="text-white/80" />
+              <span>Gaming</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

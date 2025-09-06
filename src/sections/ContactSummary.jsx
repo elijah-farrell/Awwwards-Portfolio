@@ -27,8 +27,6 @@ const ContactSummary = () => {
         start: "center center",
         end: "+=800 center",
         scrub: 0.5,
-        pin: true,
-        pinSpacing: true,
         markers: false,
       },
     });

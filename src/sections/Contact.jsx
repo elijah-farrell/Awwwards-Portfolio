@@ -8,11 +8,11 @@ const Contact = () => {
   const text = `Got a question, how or project Idea?
     WE’D love to hear from you and discus further!`;
   const items = [
-    "just imagin, I code",
-    "just imagin, I code",
-    "just imagin, I code",
-    "just imagin, I code",
-    "just imagin, I code",
+    "Say Hello",
+    "Start A Project",
+    "Open For Work",
+    "Let's Chat",
+    "Say Hello",
   ];
   useGSAP(() => {
     gsap.from(".social-link", {
@@ -46,7 +46,7 @@ const Contact = () => {
               <h2>E-mail</h2>
               <div className="w-full h-px my-2 bg-white/30" />
               <p className="text-xl tracking-wider lowercase md:text-2xl lg:text-3xl">
-                JohnDoe@gmail.com
+                farrellelijah@outlook.com
               </p>
             </div>
             <div className="social-link">
