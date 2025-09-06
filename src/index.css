@@ -114,12 +114,60 @@ body {
   font-family: var(--font-amiamie);
 }
 
+/* Extra small screens below 340px */
+@media (max-width: 339px) {
+  .banner-text-responsive {
+    font-size: 28px !important;
+    line-height: 1.2 !important;
+  }
+  
+  .marquee-text-responsive {
+    font-size: 12px !important;
+  }
+  
+  .contact-text-responsive {
+    font-size: 16px !important;
+  }
+  
+  .value-text-responsive {
+    font-size: 18px !important;
+  }
+  
+  /* Ultra-compact padding for very small screens */
+  .px-responsive {
+    padding-left: 0.25rem !important;
+    padding-right: 0.25rem !important;
+  }
+  
+  .gap-responsive {
+    gap: 0.25rem !important;
+  }
+  
+  /* Ultra-small screen marquee spacing */
+  .ultra-small-screen {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    gap: 0 !important;
+  }
+}
+
+/* Keep Elijah Farrell together - never break between names */
+.banner-text-responsive {
+  white-space: nowrap;
+}
+
+@media (max-width: 767px) {
+  .banner-text-responsive {
+    white-space: normal;
+  }
+}
+
 @utility clip-path {
   clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
 }
 
 @utility banner-text-responsive {
-  @apply text-[68px] sm:text-[118px] md:text-[126px] lg:text-[152px] leading-9 sm:leading-16 lg:leading-20;
+  @apply text-[36px] sm:text-[48px] md:text-[68px] lg:text-[118px] xl:text-[126px] 2xl:text-[152px] leading-5 sm:leading-6 md:leading-9 lg:leading-16 xl:leading-20;
 }
 
 @utility value-text-responsive {
@@ -127,10 +175,10 @@ body {
 }
 
 @utility marquee-text-responsive {
-  @apply text-[28px] sm:text-[36px] lg:text-[42px];
+  @apply text-[14px] sm:text-[18px] md:text-[28px] lg:text-[36px] xl:text-[42px];
 }
 
 @utility contact-text-responsive {
-  @apply text-[42px] sm:text-[52px] md:text-[62px] lg:text-[100px];
+  @apply text-[20px] sm:text-[28px] md:text-[42px] lg:text-[52px] xl:text-[62px] 2xl:text-[100px];
 }
 

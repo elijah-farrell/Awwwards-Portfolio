@@ -46,11 +46,11 @@ const AnimatedHeaderSection = ({
           className="flex flex-col justify-center gap-12 pt-16 sm:gap-16"
         >
           <p
-            className={`text-sm font-light tracking-[0.5rem] uppercase px-10 ${textColor}`}
+            className={`text-sm font-light tracking-[0.5rem] uppercase px-0 sm:px-1 md:px-3 lg:px-6 ultra-small-screen ${textColor}`}
           >
             {subTitle}
           </p>
-          <div className="px-10">
+          <div className="px-0 sm:px-1 md:px-3 lg:px-6 ultra-small-screen">
             <h1
               className={`flex flex-col gap-12 uppercase banner-text-responsive sm:gap-16 md:block ${textColor}`}
             >
@@ -61,7 +61,7 @@ const AnimatedHeaderSection = ({
           </div>
         </div>
       </div>
-      <div className={`relative px-10 ${textColor}`}>
+      <div className={`relative px-0 sm:px-1 md:px-3 lg:px-6 ultra-small-screen ${textColor}`}>
         <div className="absolute inset-x-0 border-t-2" />
         <div className="py-12 sm:py-16 text-end">
           <AnimatedTextLines

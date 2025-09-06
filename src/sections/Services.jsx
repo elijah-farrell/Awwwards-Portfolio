@@ -38,7 +38,7 @@ const Services = () => {
         <div
           ref={(el) => (serviceRefs.current[index] = el)}
           key={index}
-          className="sticky px-10 pt-6 pb-12 text-white bg-black border-t-2 border-white/30"
+          className="sticky px-0 sm:px-1 md:px-3 lg:px-6 pt-6 pb-12 text-white bg-black border-t-2 border-white/30 ultra-small-screen"
           style={
             isDesktop
               ? {
@@ -49,12 +49,12 @@ const Services = () => {
           }
         >
           <div className="flex items-center justify-between gap-4 font-light">
-            <div className="flex flex-col gap-6">
+              <div className="flex flex-col gap-3 sm:gap-4 md:gap-6">
               <h2 className="text-4xl lg:text-5xl">{service.title}</h2>
               <p className="text-xl leading-relaxed tracking-widest lg:text-2xl text-white/60 text-pretty">
                 {service.description}
               </p>
-              <div className="flex flex-col gap-2 text-2xl sm:gap-4 lg:text-3xl text-white/80">
+              <div className="flex flex-col gap-1 sm:gap-2 md:gap-4 text-2xl lg:text-3xl text-white/80">
                 {service.items.map((item, itemIndex) => (
                   <div key={`item-${index}-${itemIndex}`}>
                     <h3 className="flex">
