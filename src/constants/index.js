@@ -1,78 +1,90 @@
 // index.js
 export const servicesData = [
   {
-    title: "FullStack Development",
-    description:
-      "Your business deserves a fast, secure, and future-proof digital foundation. I develop custom web apps with clean architecture, optimized databases, and seamless integrations—ensuring reliability at every layer.",
+    title: "Web Development",
+    description: "Custom websites and web applications",
     items: [
       {
-        title: "Backend Engineering",
-        description: "(REST/GraphQL APIs, Microservices, Auth Systems)",
+        title: "Portfolio sites",
+        description: "",
       },
       {
-        title: "Frontend Excellence",
-        description: "(React, Vue, TypeScript, Interactive UI/UX)",
+        title: "Business websites",
+        description: "",
       },
       {
-        title: "Database Design",
-        description: "(SQL/NoSQL Optimization, Scalable Structures)",
+        title: "Web apps with React/TypeScript",
+        description: "",
+      },
+      {
+        title: "Landing pages",
+        description: "",
       },
     ],
   },
   {
-    title: "DevOps & Cloud Solutions",
-    description:
-      "Deploying software shouldn't be a gamble. I automate infrastructure, enforce security, and leverage cloud platforms (AWS/Azure) to keep your app running smoothly—24/7, at any scale.",
+    title: "Backend & APIs",
+    description: "Server-side development and database work",
     items: [
       {
-        title: "CI/CD Pipelines",
-        description: "(GitHub Actions, Docker, Kubernetes)",
+        title: "REST APIs",
+        description: "",
       },
       {
-        title: "Server Management ",
-        description: "(Linux, Nginx, Load Balancing)",
+        title: "Database design",
+        description: "",
       },
       {
-        title: "Performance Tuning",
-        description: "(Caching, Compression, Lighthouse 90+ Scores)",
+        title: "Authentication systems",
+        description: "",
+      },
+      {
+        title: "Data processing scripts",
+        description: "",
       },
     ],
   },
   {
-    title: "Security & Optimization",
-    description:
-      "Slow or hacked apps destroy trust. I harden security (XSS/SQLI protection, OAuth) and optimize bottlenecks so your app stays fast, safe, and scalable as you grow.",
+    title: "Data & Automation",
+    description: "Scripts and tools to make your life easier",
     items: [
       {
-        title: "Code Audits",
-        description: "(Refactoring, Tech Debt Cleanup)",
+        title: "Data analysis scripts",
+        description: "",
       },
       {
-        title: "Pen Testing",
-        description: "(Vulnerability Assessments)",
+        title: "Automation tools",
+        description: "",
       },
       {
-        title: "SEO Tech Stack",
-        description: "(SSR, Metadata, Structured Data)",
+        title: "File processing",
+        description: "",
+      },
+      {
+        title: "API integrations",
+        description: "",
       },
     ],
   },
   {
-    title: "Web & Mobile Apps",
-    description:
-      "A clunky interface can sink even the best ideas. I craft responsive, pixel perfect web and mobile apps (React Native/Flutter) that users love—bridging design and functionality seamlessly.",
+    title: "Technical Consulting",
+    description: "Help with your tech decisions and implementation",
     items: [
       {
-        title: "Cross-Platform Apps",
-        description: "(Single codebase for iOS/Android/Web)",
+        title: "Tech stack recommendations",
+        description: "",
       },
       {
-        title: "PWAs",
-        description: "(Offline mode, Push Notifications)",
+        title: "Architecture planning",
+        description: "",
       },
       {
-        title: "E-Commerce",
-        description: "(Checkout flows, Payment Gateways, Inventory APIs)",
+        title: "Code review",
+        description: "",
+      },
+      {
+        title: "Performance optimization",
+        description: "",
       },
     ],
   },

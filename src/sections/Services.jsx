@@ -5,9 +5,8 @@ import { useMediaQuery } from "react-responsive";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 const Services = () => {
-  const text = `I build secure, high-performance full-stack apps
-    with smooth UX to drive growth 
-    not headaches.`;
+  const text = `Based on my background in CS and experience building things. 
+    Here's what I'm comfortable tackling:`;
   const serviceRefs = useRef([]);
   const isDesktop = useMediaQuery({ minWidth: "48rem" }); //768px
   useGSAP(() => {
@@ -56,15 +55,15 @@ const Services = () => {
               </p>
               <div className="flex flex-col gap-1 sm:gap-2 md:gap-4 text-2xl lg:text-3xl text-white/80">
                 {service.items.map((item, itemIndex) => (
-                  <div key={`item-${index}-${itemIndex}`}>
-                    <h3 className="flex">
-                      <span className="mr-12 text-lg text-white/30">
+                  <div key={`item-${index}-${itemIndex}`} className="w-full">
+                    <h3 className="flex w-full">
+                      <span className="mr-12 text-lg text-white/30 flex-shrink-0">
                         0{itemIndex + 1}
                       </span>
-                      {item.title}
+                      <span className="flex-1">{item.title}</span>
                     </h3>
                     {itemIndex < service.items.length - 1 && (
-                      <div className="w-full h-px my-2 bg-white/30" />
+                      <div className="w-screen h-px my-2 bg-white/30 -ml-0 sm:-ml-1 md:-ml-3 lg:-ml-6" />
                     )}
                   </div>
                 ))}
