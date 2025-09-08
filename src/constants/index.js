@@ -173,7 +173,7 @@ export const projects = [
 export const socials = [
   { name: "MEETING", href: "https://cal.com/elijahfarrell" },
   {
-    name: "Youtube",
+    name: "WEBSITE",
     href: "https://elijahfarrell.com",
   },
   { name: "LinkedIn", href: "https://www.linkedin.com/in/elijah-farrell-915047349/" },

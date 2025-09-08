@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 
 const socials = [
   { name: "MEETING", href: "https://cal.com/elijahfarrell" },
-  { name: "Youtube", href: "https://elijahfarrell.com" },
+  { name: "WEBSITE", href: "https://elijahfarrell.com" },
   { name: "LinkedIn", href: "https://www.linkedin.com/in/elijah-farrell-915047349/" },
   { name: "GitHub", href: "https://github.com/elijah-farrell" },
 ];

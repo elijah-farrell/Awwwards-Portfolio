@@ -12,7 +12,7 @@ const Contact = () => {
     "Start A Project",
     "Open For Work",
     "Let's Chat",
-    "Say Hello",
+    "Get In Touch",
   ];
   useGSAP(() => {
     gsap.from(".social-link", {
