@@ -4,7 +4,7 @@
   <img src="./public/images/thumbnail.png" alt="Portfolio Thumbnail" />
 </a>
 
-**Live Demo:** https://awwwards-portfolio-template.vercel.app/
+**Live Demo:** <a href="https://awwwards-portfolio-template.vercel.app/" target="_blank">https://awwwards-portfolio-template.vercel.app/</a>
 
 ### Built with React, GSAP, Three.js, TailwindCSS
 
