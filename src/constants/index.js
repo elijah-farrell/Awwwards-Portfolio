@@ -183,11 +183,8 @@ export const projects = [
   },
 ];
 export const socials = [
-  { name: "MEETING", href: "https://cal.com/elijahfarrell" },
-  {
-    name: "WEBSITE",
-    href: "https://elijahfarrell.com",
-  },
-  { name: "LinkedIn", href: "https://www.linkedin.com/in/elijah-farrell-915047349/" },
-  { name: "GitHub", href: "https://github.com/elijah-farrell" },
+  { name: "MEETING", href: "https://cal.com" },
+  { name: "Twitter", href: "https://twitter.com" },
+  { name: "LinkedIn", href: "https://linkedin.com" },
+  { name: "GitHub", href: "https://github.com/elijah-farrell/Awwwards-Portfolio" },
 ];

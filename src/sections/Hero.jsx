@@ -12,7 +12,7 @@ results driven webs/apps`;
     <section id="home" className="flex flex-col justify-end min-h-screen">
       <AnimatedHeaderSection
         subTitle={"404 No Bugs Found"}
-        title={"Elijah\u00A0Farrell"}
+        title={"John\u00A0Doe\u00A0Smith"}
         text={text}
         textColor={"text-black"}
       />

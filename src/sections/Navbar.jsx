@@ -2,10 +2,10 @@ import React, { useEffect, useRef, useState } from "react";
 // import { socials } from "../constants";
 
 const socials = [
-  { name: "MEETING", href: "https://cal.com/elijahfarrell" },
-  { name: "WEBSITE", href: "https://elijahfarrell.com" },
-  { name: "LinkedIn", href: "https://www.linkedin.com/in/elijah-farrell-915047349/" },
-  { name: "GitHub", href: "https://github.com/elijah-farrell" },
+  { name: "MEETING", href: "https://cal.com" },
+  { name: "Twitter", href: "https://twitter.com" },
+  { name: "LinkedIn", href: "https://linkedin.com" },
+  { name: "GitHub", href: "https://github.com/elijah-farrell/Awwwards-Portfolio" },
 ];
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -135,7 +135,7 @@ const Navbar = () => {
           <div className="font-light">
             <p className="tracking-wider text-white/50">E-mail</p>
             <p className="text-sm tracking-widest lowercase text-pretty">
-              farrellelijah@outlook.com
+              hello@example.com
             </p>
           </div>
           <div className="font-light">

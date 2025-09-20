@@ -48,7 +48,7 @@ const About = () => {
         <img
           ref={imgRef}
           src="images/pfp.png"
-          alt="Elijah Farrell"
+          alt="John Doe Smith"
           className="w-md rounded-3xl"
         />
         <div className="w-full">
