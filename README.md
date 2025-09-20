@@ -1,8 +1,10 @@
 # 🌐 3D Awwwards-Level Developer Portfolio Template
 
-<a href="https://ef-portfolio02.vercel.app/" target="_blank">
+<a href="https://awwwards-portfolio-template.vercel.app/" target="_blank">
   <img src="./public/images/thumbnail.png" alt="Portfolio Thumbnail" />
 </a>
+
+**Live Demo:** https://awwwards-portfolio-template.vercel.app/
 
 ### Built with React, GSAP, Three.js, TailwindCSS
 
